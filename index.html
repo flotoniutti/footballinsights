@@ -688,7 +688,7 @@ input[type=range]::-webkit-slider-thumb {
   background: rgba(255,255,255,0.05); border: 1px solid rgba(13,27,46,0.08);
   display: flex; align-items: center; justify-content: center; font-size: 1rem;
 }
-.sp-item-title { font-weight: 600; font-size: 0.95rem; margin-bottom: 3px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.sp-item-title { font-weight: 600; font-size: 0.95rem; color: #f0f4f8; margin-bottom: 3px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .sp-item-desc { font-size: 0.82rem; color: #5a6a7a; line-height: 1.6; }
 .sp-tag-reduced {
   font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.08em;
@@ -704,7 +704,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 .sp-value-line {
   font-family: var(--font-mono); font-size: 0.72rem;
-  color: var(--grey); letter-spacing: 0.06em; margin-bottom: 8px;
+  color: rgba(255,255,255,0.5); letter-spacing: 0.06em; margin-bottom: 8px;
 }
 .sp-strikethrough {
   text-decoration: line-through; color: rgba(13,27,46,0.4);
@@ -717,8 +717,8 @@ input[type=range]::-webkit-slider-thumb {
   margin-bottom: 6px;
 }
 .sp-ht { font-family: var(--font-body); font-size: 1rem; }
-.sp-price-sub { font-family: var(--font-mono); font-size: 0.68rem; color: var(--grey); letter-spacing: 0.08em; }
-.sp-note { font-size: 0.7rem; color: rgba(13,27,46,0.35); margin-top: 14px; font-style: italic; }
+.sp-price-sub { font-family: var(--font-mono); font-size: 0.68rem; color: rgba(255,255,255,0.5); letter-spacing: 0.08em; }
+.sp-note { font-size: 0.7rem; color: rgba(255,255,255,0.4); margin-top: 14px; font-style: italic; }
 @media (max-width: 900px) {
   .sp-layout { grid-template-columns: 1fr; gap: 32px; }
   .starter-pack { padding: 28px; }
@@ -1567,7 +1567,7 @@ body.lang-fr .txt-en-img { display: none !important; }
     <div class="hero-tag">Scout · Project · Decide</div>
     <h1 class="hero-title">
       <span class="txt-fr">Des données.<br>Une <span class="accent">méthode.</span><br>Des décisions.</span>
-      <span class="txt-en">Data.<br>A <span class="accent">method.</span><br>Decisions.</span>
+      <span class="txt-en">Scout.<br><span class="accent">Project.</span><br>Decide.</span>
     </h1>
     <p class="hero-sub">
       <span class="txt-fr">Football Insights transforme <em>la donnée en décision structurée</em> grâce à une méthode de projection inter-championnats unique.</span>
@@ -1780,7 +1780,7 @@ body.lang-fr .txt-en-img { display: none !important; }
   </h2>
   <p class="section-lead fade-up" style="margin-bottom:48px">
     <span class="txt-fr">Michael Olise (Bayern München) — cliquez sur chaque zone pour comprendre ce qu'elle révèle.</span>
-    <span class="txt-en">Arthur Atta (Udinese) projected to the Premier League — click each zone to understand what it reveals.</span>
+    <span class="txt-en">Michael Olise (Bayern München) — click each zone to understand what it reveals.</span>
   </p>
 
   <div class="fi-demo-layout fade-up">
@@ -2568,7 +2568,7 @@ const FI_DATA = {
     tag_fr: "Profil joueur", tag_en: "Player profile",
     title_fr: "Le contexte avant tout", title_en: "Context first",
     body_fr: "Le profil regroupe les informations essentielles : poste, équipe, âge, pied, valeur marchande TM et salaire. Ces données contextualisent toute l'analyse — Michael Olise a 24 ans, joue au Bayern München, joue au Bayern München. Son âge et son club sont centraux : un index de 82 à 24 ans dans le meilleur championnat du monde a une tout autre portée qu'ailleurs.",
-    body_en: "The profile gathers essential information: position, team, age, foot, TM market value and salary. These data contextualise the entire analysis — Michael Olise is 24, plays at Bayern München, worth €130M. His age is central: an index of 82 at 24 in the world's best league means something very different than elsewhere.",
+    body_en: "The profile gathers essential information: position, team, age, foot, TM market value and salary. These data contextualise the entire analysis.",
     insight_fr: "",
     insight_en: "24 years old · MOD · Bayern München · 10 goals and 17 assists in 24 matches. A world-elite profile at early full maturity — exactly what the Football Insights index objectively confirms."
   },
@@ -2582,7 +2582,7 @@ const FI_DATA = {
   },
   index: {
     tag_fr: "Index de performance", tag_en: "Performance index",
-    title_fr: "Possible Ballon d'Or — l'index le confirme", title_en: "True level — the index confirms it",
+    title_fr: "Possible Ballon d'Or — l'index le confirme", title_en: "Worthy Ballon d'Or — the index confirms it",
     body_fr: "L'index Football Insights distingue trois niveaux : sans finition (82.7 — le niveau de jeu pur, indépendant de la performance devant le but), avec finition (84.7) et tendanciel (84.5 — sa trajectoire récente, encore en hausse). Un index de 82+ sans finition le place dans le top 5 mondial. La courbe de trajectoire de 18 à 24 ans montre une progression continue et stable — aucun pic isolé.",
     body_en: "The Football Insights index distinguishes three levels: without finishing (82.7 — pure playing level, independent of performance in front of goal), with finishing (84.7) and trend (84.5 — recent trajectory, still rising). An index of 82+ without finishing places him in the world top 5. The trajectory curve from 18 to 24 shows continuous, stable progression — no isolated peak.",
     insight_fr: "82.7 sans finition, 84.7 avec — les deux valeurs sont proches et élevées : Olise est excellent dans tous les aspects du jeu offensif. Sa trajectoire tendancielle à 84.5 confirme qu'il est au sommet de sa forme actuelle.",
@@ -2592,7 +2592,7 @@ const FI_DATA = {
     tag_fr: "Radar contextualisé", tag_en: "Contextualised radar",
     title_fr: "Un profil qui écrase la médiane mondiale", title_en: "A profile that dominates the worldwide median",
     body_fr: "Le radar Football Insights compare le joueur à la médiane mondiale de son poste — calculée sur 100+ championnats depuis 2018-19. Ce n'est pas une comparaison locale : Olise est mesuré face à tous les milieux offensifs du monde. La surface verte représente son profil, superposée à la médiane MO (jaune) et aux seuils top/pire 10%.",
-    body_en: "The Football Insights radar compares the player to the worldwide position median — calculated across 100+ leagues since 2018-19. This is not a local comparison: Olise is measured against all offensive midfielders in the world. The green surface represents his profile, overlaid on the MO median (yellow) and top/worst 10% thresholds.",
+    body_en: "The Football Insights radar compares the player to the worldwide position median — calculated across 100+ leagues since 2018-19. Olise is measured against all offensive midfielders in the world. The green surface represents his profile, overlaid on the AM median (yellow) and top/worst 10% thresholds.",
     insight_fr: "Olise dépasse massivement la médiane mondiale sur tous les axes — passes clés, pressing, récupération, conservation, construction, dribble. C'est l'un des radars les plus complets observés sur 100+ championnats. Similaire statistiquement à Lamine Yamal et L. Sané.",
     insight_en: "Olise massively exceeds the worldwide median on every single axis — key passes, pressing, recovery, ball retention, construction, dribbling. One of the most complete radars observed across 100+ leagues. Similar to Lamine Yamal and L. Sané."
   },
